@@ -1,15 +1,17 @@
 /* Global styles */
 body {
-  color: #524f4f;
+  color: #434040;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
-  background: #dfa6e7;
+  background: url(../img/aether-sigil.png) repeat #dfa6e7;
+  background-size: 20%;
+  background-blend-mode:luminosity;
 }
 
 header,
 article,
 footer {
-  background: #dfa6e7;
+  /*background: url(../img/G-Logo-04.png) repeat #dfa6e7;*/
   /* Add Flexbox properties to create parent flex containers and to center the content-wrapper */
   display: flex;
   justify-content: center;
@@ -49,7 +51,7 @@ article .content-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: rgba(250, 240, 252, 0.2);
+  background: #E4B5EB;
   padding: 70px 0;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -95,6 +97,10 @@ footer .content-wrapper {
     justify-content: flex-start;
   }
 
+  h1 {
+    text-decoration: underline;
+  }
+  
   article .content-wrapper {
     /* Add Flexbox properties so that the extra space in the content-wrapper is around the child items and align them at their centers */
     justify-content: space-around;
